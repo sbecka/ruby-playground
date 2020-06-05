@@ -38,4 +38,4 @@ def firstdouble(arr, index)
     return answer[index]
 end
 
-puts firstdouble([5, 2, 3, 4], 0)
+puts firstdouble([6, 2, 3, 4], 0)
