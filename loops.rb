@@ -38,8 +38,8 @@ print even # [0, 2, 4, 6, 8]
 ar = [1, 2, 100, -5, 8]
 newArr = []
 
-ar.each do |n|
+asdf = ar.each do |n|
     newArr.push(n)
 end
 
-print newArr
+print asdf
