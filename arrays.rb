@@ -65,7 +65,38 @@ puts Inc([1, 2, 3, 4]) # false
     num ** 2
 end
 
-personality_types = ["bad", "good", "great"]
+personality_types = ['bad', 'good', 'great']
 
-p = personality_types.map { |type| type + " person" }
-puts p.to_s # ["bad person", "good person", "great person"]
+p = personality_types.map { |type| type + ' person' }
+puts p.to_s # ['bad person', 'good person', 'great person']
+
+sports = ['tennis', 'basketball', 'baseball', 'football']
+sports.each_with_index do |sport, index| # each_with_index keeps track of index
+    puts index.to_s + '. ' + sport # 0. tennis 1. basketball ...
+end
+
+words = ['all', 'my', 'cookies']
+my_words = words.any? do |w| # any?() iterates over each element and returns true for any true conditions
+    w[0] == 'a'
+end
+puts my_words # true
+
+your_words = words.all? do |w| # all? returns true if all elements pass true condition
+    w[0] == 'a'
+end
+puts your_words # false
+
+w = ['water', 'watermelon', 'wall', 'water slide']
+# returns first element that matches
+w.find do |w| 
+    w[0..1] == 'wa'
+end
+
+# returns all elements that match
+w.find_all do |w|
+    w[0..1] == 'wa'
+end
+# OR
+w.select do |w|
+    w[0..1] == 'wa'
+end

@@ -42,3 +42,10 @@ puts cat.class() # String
 # A class can be thought of as a factory that makes objects.
 # String and Array are examples of classes.
 # An object is an instance of a class. Objects have methods.
+
+puts 'sally'.include?('s') # true
+
+# string interpolation
+x = 'cat'
+y = 'hat'
+puts "the #{x} and the #{y}" # the cat and the hat
