@@ -57,3 +57,15 @@ def Inc(arr)
     return true
 end
 puts Inc([1, 2, 3, 4]) # false
+
+# map, the following both result in a new array [4, 16, 36, 64]
+[2, 4, 6, 8].map {|num| num ** 2} # single line
+
+[2, 4, 6, 8].map do |num| # multiple lines
+    num ** 2
+end
+
+personality_types = ["bad", "good", "great"]
+
+p = personality_types.map { |type| type + " person" }
+puts p.to_s # ["bad person", "good person", "great person"]

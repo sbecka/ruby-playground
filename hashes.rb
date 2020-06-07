@@ -53,3 +53,15 @@ def keys(arr)
 end
 
 puts keys(modes) # [1, 2, 3, 4, 5]
+
+snowy_owl = {
+    "type"=>"Bird",
+    "diet"=>"Carnivore",
+    "life_span"=>"10 years"
+}
+
+t = snowy_owl.select do |key, value| # The select() method is used to find the key value pair with the key equal to "type".
+    key == "type"
+end
+
+puts t # {"type"=>"Bird"}
