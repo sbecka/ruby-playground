@@ -52,3 +52,30 @@ end
 
 current_temp = Celsius.new(25)
 puts current_temp.to_fahrenheit() # 77.0
+
+# Modules define methods that can be added to classes.
+module Happy
+    def sing()
+        return('Happy happy, joy joy')
+    end
+end
+
+class Singer
+    include Happy
+end
+
+s = Singer.new()
+puts s.sing() # Happy happy, joy joy
+
+# Inheritance is a way for classes to access all the methods
+class Mammal
+    def heartbeat?
+        true
+    end
+end
+
+class Dolphin < Mammal
+end
+
+lulu = Dolphin.new()
+puts lulu.heartbeat? # true
