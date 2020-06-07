@@ -36,3 +36,9 @@ def FirstReverse(str)
 end
 
 puts FirstReverse('I love Code') # edoC evol I
+
+cat = String.new('hi cat')
+puts cat.class() # String
+# A class can be thought of as a factory that makes objects.
+# String and Array are examples of classes.
+# An object is an instance of a class. Objects have methods.
