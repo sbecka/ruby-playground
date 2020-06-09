@@ -12,9 +12,11 @@ class QueueTwoStacks
 
     def dequeue
         if @second_stack.empty?
+            # until loop will execute till the given condition is true. 
+            # opposite to the while loop which executes until the given condition is false.
             until @first_stack.empty?
-            new_item = @first_stack.pop
-            @second_stack.push(new_item)
+                new_item = @first_stack.pop
+                @second_stack.push(new_item)
             end
         end
         
